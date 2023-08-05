@@ -19,10 +19,10 @@ class Contact extends StatelessWidget {
             subtitle: Text("656864316641616"),
             trailing: Icon(Icons.arrow_forward_ios),
             leading: CircleAvatar(
-              backgroundColor: Colors.blue, // Set the background color of the CircleAvatar
+              backgroundColor: Colors.blue,   
               child: Icon(
                 Icons.person,
-                color: Colors.white, // Set the color of the person icon
+                color: Colors.white,  
               ),
             ),
           ),
@@ -31,10 +31,10 @@ class Contact extends StatelessWidget {
             subtitle: Text("7559815386"),
             trailing: Icon(Icons.arrow_forward_ios),
             leading: CircleAvatar(
-              backgroundColor: Colors.purple, // Set the background color of the CircleAvatar
+              backgroundColor: Colors.purple,   
               child: Icon(
                 Icons.person,
-                color: Colors.white, // Set the color of the person icon
+                color: Colors.white,  
               ),
             ),
           ),  ListTile(
@@ -42,10 +42,10 @@ class Contact extends StatelessWidget {
             subtitle: Text("678794623"),
             trailing: Icon(Icons.arrow_forward_ios),
             leading: CircleAvatar(
-              backgroundColor: Colors.deepOrange, // Set the background color of the CircleAvatar
+              backgroundColor: Colors.deepOrange,
               child: Icon(
                 Icons.person,
-                color: Colors.white, // Set the color of the person icon
+                color: Colors.white,  
               ),
             ),
           ),
@@ -54,10 +54,10 @@ class Contact extends StatelessWidget {
             subtitle: Text("8316641616"),
             trailing: Icon(Icons.arrow_forward_ios),
             leading: CircleAvatar(
-              backgroundColor: Colors.pinkAccent, // Set the background color of the CircleAvatar
+              backgroundColor: Colors.pinkAccent,
               child: Icon(
                 Icons.person,
-                color: Colors.white, // Set the color of the person icon
+                color: Colors.white,
               ),
             ),
           ),
@@ -66,10 +66,10 @@ class Contact extends StatelessWidget {
             subtitle: Text("6568643166"),
             trailing: Icon(Icons.arrow_forward_ios),
             leading: CircleAvatar(
-              backgroundColor: Colors.green, // Set the background color of the CircleAvatar
+              backgroundColor: Colors.green, 
               child: Icon(
                 Icons.person,
-                color: Colors.white, // Set the color of the person icon
+                color: Colors.white, 
               ),
             ),
           ),
@@ -78,10 +78,10 @@ class Contact extends StatelessWidget {
             subtitle: Text("12546641616"),
             trailing: Icon(Icons.arrow_forward_ios),
             leading: CircleAvatar(
-              backgroundColor: Colors.grey.shade500, // Set the background color of the CircleAvatar
+              backgroundColor: Colors.grey.shade500, 
               child: Icon(
                 Icons.person,
-                color: Colors.white, // Set the color of the person icon
+                color: Colors.white, 
               ),
             ),
           ),
@@ -90,10 +90,10 @@ class Contact extends StatelessWidget {
             subtitle: Text("2846466516"),
             trailing: Icon(Icons.arrow_forward_ios),
             leading: CircleAvatar(
-              backgroundColor: Colors.purple.shade900, // Set the background color of the CircleAvatar
+              backgroundColor: Colors.purple.shade900, 
               child: Icon(
                 Icons.person,
-                color: Colors.white, // Set the color of the person icon
+                color: Colors.white, 
               ),
             ),
           ),
@@ -102,10 +102,10 @@ class Contact extends StatelessWidget {
             subtitle: Text("652664641616"),
             trailing: Icon(Icons.arrow_forward_ios),
             leading: CircleAvatar(
-              backgroundColor: Colors.blue.shade200, // Set the background color of the CircleAvatar
+              backgroundColor: Colors.blue.shade200, 
               child: Icon(
                 Icons.person,
-                color: Colors.white, // Set the color of the person icon
+                color: Colors.white, 
               ),
             ),
           ),
