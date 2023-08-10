@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 
@@ -17,21 +18,20 @@ class Gridviewui extends StatelessWidget {
     Icons.delivery_dining,
   ];
   var color = [Colors.green,Colors.red,Colors.teal,Colors.purple,Colors.blue,Colors.yellowAccent,];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Gridview Builder'),),
       body: Padding(
-        padding: const EdgeInsets.all(50.0),
+        padding: const EdgeInsets.all(8.0),
         child: GridView.count(crossAxisCount: 2,
-          mainAxisSpacing: 50,
+          mainAxisSpacing: 100,
           crossAxisSpacing: 50,
           children: List.generate(6, (index) =>
               Container(
-                height: 50,
-         width: 50,
          decoration:BoxDecoration(
-           borderRadius: BorderRadius.circular(50),
+           borderRadius: BorderRadius.circular(70),
 
            color: color[index],
          ),
@@ -39,9 +39,9 @@ class Gridviewui extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('heart shaker'),
-                  Icon(
-                    icons[index],)
+                      Icon(
+                        icons[index],) ,
+                  Text('heart shaker')
 
                     ]
                   ),

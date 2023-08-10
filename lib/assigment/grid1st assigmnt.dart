@@ -32,6 +32,7 @@ class Gridview1 extends StatelessWidget {
             child: Container(
               color: Colors.white60,
               child: Column(
+
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
