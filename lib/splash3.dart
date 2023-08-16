@@ -17,7 +17,7 @@ class splash3 extends StatefulWidget {  //splash is initaillly immutable
 class splash3state extends State{
   @override
   void initState() {               //what will happen when the app or page is first launched
-    Timer(Duration(seconds: 1), () {
+    Timer(Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context)=>Login2()));
     });
