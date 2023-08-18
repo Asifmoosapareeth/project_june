@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 void main(){
   runApp(MaterialApp(home: Drawyer_ex(),));
 }
@@ -11,6 +13,7 @@ class Drawyer_ex extends StatelessWidget {
       appBar: AppBar(
         title: Text('my profile'),
       ),
+
       drawer: Drawer(
         child: ListView(
           children: const [

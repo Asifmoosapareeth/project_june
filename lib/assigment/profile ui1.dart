@@ -112,7 +112,7 @@ class ProfileUI extends StatelessWidget {
                     children: [
                       SizedBox(width: 20,),Icon(Icons.settings),
                       SizedBox(width: 100,),Text('Settings'),
-                      SizedBox(width: 168,),Icon(Icons.arrow_forward_ios)
+                      SizedBox(width: 200,),Icon(Icons.arrow_forward_ios)
                     ],
                   ),
                 ),
@@ -127,7 +127,7 @@ class ProfileUI extends StatelessWidget {
                     children: [
                       SizedBox(width: 20,),Icon(Icons.person_add),
                       SizedBox(width: 100,),Text('Invite a person'),
-                      SizedBox(width: 153,),Icon(Icons.arrow_forward_ios)
+                      SizedBox(width: 163,),Icon(Icons.arrow_forward_ios)
                     ],
                   ),
                 ),
@@ -142,7 +142,7 @@ class ProfileUI extends StatelessWidget {
                     children: [
                       SizedBox(width: 20,),Icon(Icons.logout),
                       SizedBox(width: 100,),Text('Log out'),
-                      SizedBox(width: 158,),Icon(Icons.arrow_forward_ios)
+                      SizedBox(width: 205,),Icon(Icons.arrow_forward_ios)
                     ],
                   ),
                 ),
