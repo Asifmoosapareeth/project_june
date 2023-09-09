@@ -14,6 +14,7 @@ class Farmers_freshui extends StatefulWidget {
 }
 
 class _Farmers_freshuiState extends State<Farmers_freshui> {
+  int index=0;
   List itemnames=['Apple','Banana','grapes','kiwi','mango','orange'];
   List itempic=['assets/images/fruits/apple.jpg','assets/images/fruits/banana.jpg','assets/images/fruits/grapes.jpg','assets/images/fruits/kiwi.jpg',
   'assets/images/fruits/mango.jpg','assets/images/fruits/orange.jpg'];
@@ -36,7 +37,24 @@ class _Farmers_freshuiState extends State<Farmers_freshui> {
 )
         ],
         elevation: 0,
-        backgroundColor: Colors.green,),
+        backgroundColor: Colors.green,
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: Colors.white,
+          selectedItemColor: Colors.green,
+          currentIndex: index,
+          onTap: (tappedindex) {
+            setState(() {
+              index = tappedindex;
+            });
+          },
+
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home),label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(CupertinoIcons.cart),label: 'Cart'),
+            BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined),label: 'Account'),
+          ]),
       body: Column(
         children: [
           Container(height:65,width: double.infinity,
@@ -161,7 +179,8 @@ class TextContainer extends StatelessWidget {
 class Griditemss extends StatelessWidget {
   String lname;
   ImageProvider myimage;
-  Griditemss({super.key,required this.lname,required this.myimage});
+
+  Griditemss({super.key,required this.lname,required this.myimage,});
 
   @override
   Widget build(BuildContext context) {

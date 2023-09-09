@@ -148,6 +148,7 @@ class PlaylistCard extends StatelessWidget {
             Lname,
             style: GoogleFonts.kanit(color: Colors.pinkAccent, fontSize: 18),
           ),
+
           SizedBox(width: 240),
           Icon(
             CupertinoIcons.star,

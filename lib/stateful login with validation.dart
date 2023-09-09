@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:project_june/Homepage.dart';
+import 'package:project_june/home.dart';
 import 'package:project_june/register.dart';
 
 class Login2 extends StatefulWidget{
