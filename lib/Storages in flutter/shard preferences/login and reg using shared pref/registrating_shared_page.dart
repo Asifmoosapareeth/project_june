@@ -1,74 +1,72 @@
 import 'package:flutter/material.dart';
-import 'package:project_june/Storages%20in%20flutter/shard%20preferences/simple%20login%20using%20shared%20pref/shared%20home.dart';
-import 'package:project_june/Storages%20in%20flutter/shard%20preferences/simple%20login%20using%20shared%20pref/shared-login.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-void main(){
-  runApp(MaterialApp(home: Shared_Register(),));
-}
-class Shared_Register extends StatefulWidget {
-  const Shared_Register({super.key});
 
+import '../../../stateful login with validation.dart';
+
+
+class RegistrationPage extends StatefulWidget {
   @override
-  State<Shared_Register> createState() => _Shared_RegisterState();
+  State<RegistrationPage> createState() => _RegistrationPageState();
 }
 
-class _Shared_RegisterState extends State<Shared_Register> {
-  final name=TextEditingController();
-  final uname=TextEditingController();
-  final pwd = TextEditingController();
+class _RegistrationPageState extends State<RegistrationPage> {
+  final name  = TextEditingController();
+  final uname = TextEditingController();
+  final pwd   = TextEditingController();
   late SharedPreferences preferences;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Register page'),),
+      appBar: AppBar(
+        title: const Text("Registration"),
+      ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(15.0),
               child: TextField(
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: 'name'
-                ),
                 controller: name,
+                decoration: const InputDecoration(
+                    border: OutlineInputBorder(), hintText: "Name"),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(15.0),
               child: TextField(
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: 'email'
-                ),
                 controller: uname,
+                decoration: const InputDecoration(
+                    border: OutlineInputBorder(), hintText: "UserName"),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(15.0),
               child: TextField(
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: 'password'
-                ),
                 controller: pwd,
+                decoration: const InputDecoration(
+                    border: OutlineInputBorder(), hintText: "Password"),
               ),
             ),
-      ElevatedButton(onPressed: () async{
-        String username= name.text;
-        String email=uname.text;
-        String password= pwd.text;
-        preferences = await SharedPreferences.getInstance();
-        preferences.setString('name', username);
-        preferences.setString('uname', email);
-        preferences.setString('pswrd', password);
-        Navigator.pushReplacement(context,MaterialPageRoute(builder: (context)=>LoginShared()));
-      }, child: Text('Register'))
-
+            ElevatedButton(
+                onPressed: () => storedata(),
+                child: const Text("Register Here"))
           ],
         ),
       ),
     );
   }
+  void storedata() async {
+    String personname = name.text;
+    String username = uname.text;
+    String password = pwd.text;
 
+    preferences = await SharedPreferences.getInstance()!;
+    preferences.setString('name', personname);
+    preferences.setString('uname', username);
+    preferences.setString('pass', password);
+
+    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Login2()));
+  }
 }
