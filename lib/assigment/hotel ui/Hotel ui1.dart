@@ -97,7 +97,6 @@ class _HotelUi1State extends State<HotelUi1> {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      // Navigate to the second page when the image is clicked.
                       Navigator.of(context).push(MaterialPageRoute(
                         builder: (context) => HotelUI2(),
                       ));
