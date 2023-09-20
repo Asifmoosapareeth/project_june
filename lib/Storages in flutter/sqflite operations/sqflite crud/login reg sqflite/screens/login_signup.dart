@@ -2,7 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:project_june/Storages%20in%20flutter/sqflite%20operations/sqflite%20crud/login%20reg%20sqflite/screens/signup.dart';
 
+
 import 'login.dart';
+void main(){
+  runApp(MaterialApp(home: Login_Signup(),));
+}
 
 class Login_Signup extends StatefulWidget {
   const Login_Signup({Key? key}) : super(key: key);
