@@ -108,12 +108,15 @@ class _Tourism_ui1State extends State<Tourism_ui1> {
              );
              }
          ),
-       ),
-        Container(
-           color: Colors.blue,
-           height: 30,width: 410,
-           child: Center(child: Text('Explore',style: TextStyle(color: Colors.white70,fontSize: 15,fontWeight: FontWeight.bold),)),
+       ),ElevatedButton(
+         onPressed: () {
+           // Your button's action here
+         },
+         style: ButtonStyle(
+           minimumSize: MaterialStateProperty.all(Size(300, 50)),
          ),
+         child: Text('Explore', style: TextStyle(fontSize: 18),),
+       ),
        SizedBox(height: 25,)
 
 

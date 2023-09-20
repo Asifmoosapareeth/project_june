@@ -120,9 +120,14 @@ class _Tourism_bookingState extends State<Tourism_booking> {
           ),
            SizedBox(height: 12,),
            ElevatedButton(
-
-               onPressed: (){},
-               child: Text('Explore',style: TextStyle(fontSize: 18),))
+             onPressed: () {
+               // Your button's action here
+             },
+             style: ButtonStyle(
+               minimumSize: MaterialStateProperty.all(Size(300, 50)),
+             ),
+             child: Text('Explore', style: TextStyle(fontSize: 18),),
+           )
 
 
          ],
