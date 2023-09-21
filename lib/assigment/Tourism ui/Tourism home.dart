@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:project_june/assigment/Tourism%20ui/Tourism%20booking.dart';
-void main(){
-  runApp(MaterialApp(debugShowCheckedModeBanner:false,home: Tourism_ui1(),));
-}
+// void main(){
+//   runApp(MaterialApp(debugShowCheckedModeBanner:false,home: Tourism_ui1(),));
+// }
 
 class Tourism_ui1 extends StatefulWidget {
   const Tourism_ui1({super.key});

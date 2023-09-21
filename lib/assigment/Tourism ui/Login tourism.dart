@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'Tourism home.dart';
+
 void main(){
   runApp(MaterialApp(debugShowCheckedModeBanner:false,
-    home: Tourism_Home(),));
+    home: Tourism_Login(),));
 }
 
-class Tourism_Home extends StatefulWidget {
+class Tourism_Login extends StatefulWidget {
 
 
   @override
-  State<Tourism_Home> createState() => _Tourism_HomeState();
+  State<Tourism_Login> createState() => _Tourism_LoginState();
 }
 
-class _Tourism_HomeState extends State<Tourism_Home> {
+class _Tourism_LoginState extends State<Tourism_Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +34,12 @@ class _Tourism_HomeState extends State<Tourism_Home> {
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
                   minimumSize: Size(130, 40)
               ),
-              onPressed: (){},
+              onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Tourism_ui1()),
+                );
+              },
               child: Text("Log In")),
 
           SizedBox(height: 10,),
