@@ -83,7 +83,7 @@ class _Hive_crudState extends State<Hive_crud> {
                 top: 15,
                 left: 15,
                 right: 15,
-                bottom: MediaQuery.of(context).viewInsets.bottom + 120),
+                bottom: MediaQuery.of(context).viewInsets.bottom+150 ),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [

@@ -50,6 +50,15 @@ dependencies:
   hive_flutter: ^1.1.0
   flutter_rating_bar: ^4.0.1
   get: ^4.6.6
+  email_validator: ^2.1.17
+  #api integration usng html
+  http: ^1.1.0
+  cached_network_image: ^3.3.0
+  #api integraion using dio
+  dio: ^5.3.3
+  scrollable_positioned_list: ^0.3.8
+  internet_connection_checker: ^1.0.0+1
+  top_snackbar_flutter: ^3.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
