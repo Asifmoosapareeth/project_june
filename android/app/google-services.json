@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "792857541724",
+    "project_id": "stellar-display-398208",
+    "storage_bucket": "stellar-display-398208.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792857541724:android:448991ff3571f9ce9cfa99",
+        "android_client_info": {
+          "package_name": "com.luminar.project_june"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB72b4fFPaPHbqijCPzc4Eo58HD8etkbJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
