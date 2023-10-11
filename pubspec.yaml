@@ -59,8 +59,13 @@ dependencies:
   scrollable_positioned_list: ^0.3.8
   internet_connection_checker: ^1.0.0+1
   top_snackbar_flutter: ^3.1.0
+  #firebase
   firebase_core: ^2.17.0
   firebase_auth: ^4.10.1
+  #firebasestorage
+  firebase_storage: ^11.2.8
+  image_picker: ^1.0.4
+  path: ^1.8.3
 
 
   # The following adds the Cupertino Icons font to your application.
